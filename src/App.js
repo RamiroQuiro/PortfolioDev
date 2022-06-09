@@ -6,8 +6,8 @@ import Home from './components/views/Home';
 function App() {
   return (
   <Routes>
-    <Route path="/" element={<Layout />}>
-      <Route path="/home" element={<Home/>}/>
+    <Route  element={<Layout />}>
+      <Route path="/" index element={<Home/>}/>
     </Route>
   </Routes>     
   );
