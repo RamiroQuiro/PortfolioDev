@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      grayscale: {
+        50: '50%',
+      },
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],
         'roboto-slab': ['Roboto Slab', 'serif'],
