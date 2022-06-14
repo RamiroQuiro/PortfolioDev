@@ -1,0 +1,22 @@
+.menuActivo{
+    /* align-items: start; */
+    transform: translateX(-45%);
+    gap: 1rem;
+    margin-left:5%;
+    transition: all .6s ease-in-out;
+}
+
+.menuActivo .link{
+    transform: translate(0,0);
+    width: 3rem;
+    height: auto;
+}
+.menuActivo li:hover{
+    transform: translate(0,0);
+}
+
+.menuActivo li p{
+    font-size: 14px;
+    margin-left: -5px;
+
+}
