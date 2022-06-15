@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LoginTurnos  from "../../images/Login.png";
+import CartaOnline  from "../../images/React App - carta-online-kappa.vercel.app.png";
 import CardsTrabajos from "./CardsTrabajos";
 
 export default function Trabajos() {
@@ -16,7 +17,7 @@ const trabajos=[{
 },
 {nombre:"CartaOnline",
 descripcion:"Carta online para restaurantes",
-imagen:"https://images.unsplash.com/photo-1653559260394-ee10e61e0155?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=350&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NTEyNjI1Mg&ixlib=rb-1.2.1&q=80&w=350",
+imagen:CartaOnline,
 url:"//carta-online-kappa.vercel.app/",
 repositorio:"//github.com/RamiroQuiro/CartaOnline",
 herramientas:["react","tailwindCSS","firebase"],},
@@ -29,8 +30,8 @@ herramientas:["react","css"],},
 ]
 
   return (
-    <div className="flex flex-col justify-center items-center duration-150 ease-in-out gap-5 w-full h-full p-5">
-      <h1 className="text-4xl text-sky-900  z-10 font-black ">Trabajos</h1>
+    <div className="flex flex-col items-center duration-150 ease-in-out z-50 gap-5 w-full h-full p-5">
+      <h1 className="text-2xl text-sky-800  z-10 font-medium ">Trabajos</h1>
 
       <section className="w-full flex flex-wrap flex-col md:flex-row gap-5 gap-y-10 mb-8 md:mb-0 flex-between items-center p-8">
         {trabajos.map((trabajo) => (

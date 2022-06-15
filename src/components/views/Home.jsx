@@ -21,18 +21,18 @@ const changeHome=()=>{
 }
 
   return (
-    <div className="bg-gradient-to-r font-roboto transition-all ease-in-out from-gray-50 flex justify-center items-center to-gray-300 dark:form-gray-200 h-screen min-h-screen">
+    <div className="font-roboto transition-all ease-in-out flex justify-center items-center h-screen min-h-screen">
 
       {/* OutLet condicionar si es home o page */}
 <div className={
   home?
-  "absolute duration-500 ease-in-out shadow-3xl transition-all z-20  flex justify-center items-center mx-auto rounded-full  bg-sky-900 bg-opacity-80  w-full scale-20 h-full rotate-12"
+  "absolute duration-500 ease-in-out shadow-3xl transition-all z-20  flex justify-center items-center mx-auto rounded-full  bg-sky-900 bg-opacity-80   scale-30 h-full rotate-12"
 :
-"absolute duration-500 ease-in-out transition-all flex justify-center mt-40 items-center mx-auto scale-15 h-screen  "
+"absolute duration-500 ease-in-out scale- transition-all flex justify-center mt-40  items-center mx-auto  h-full  "
 }>
      <Outlet/>
 </div>
-      <div className="w-full h-screen  flex justify-around items-center">
+      <div className="w-full  flex justify-around items-center">
         {/* Menu Parte Izquierda */}
        <Menu
        home={home}

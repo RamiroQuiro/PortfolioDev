@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import { climaSwitch } from "../../hooks/swichtDescripcion";
+import {themes} from '../../contexts/themes';
 
 export default function Layout() {
   const [localization, setLocalization] = useState({});
@@ -94,9 +95,12 @@ export default function Layout() {
     });
   }, [localization]);
 
+
+
   return (
-    <div className="flex flex-col font-black md:flex min-h-screen ">
-      <nav className="flex w-full mx-auto items-center h justify-between fixed py-8 px-20 font-medium uppercse text-sm  ">
+    <div className={themes.light+"flex flex-col h-full font-roboto md:flex transition-all ease-in-out "}>
+      <nav className="flex w-full mx-auto items-center  absolute
+       justify-between  py-8 px-20 font-medium uppercse text-sm ">
         <p className=" flex gap-5 cursor-pointer">
           {diasSemana[fecha.dia]} , {fecha.dia} de {meses[fecha.mes]}
         </p>
@@ -116,7 +120,7 @@ export default function Layout() {
           </p>
         </div>
       </nav>
-      <main>
+      <main  className=" ">
         <Outlet />
       </main>
     </div>

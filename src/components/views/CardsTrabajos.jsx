@@ -4,7 +4,7 @@ import { image } from '../../images/imagenes'
 
 export default function CardsTrabajos({ nombre,imagen,website,repositorio,herramientas,id }) {
   return (
-    <div className="bg-gray-50 bg-opacity-95 dark:bg-gray-800 w-72 shadow-md mx-auto rounded-xl ">
+    <div className="bg-gray-50 bg-opacity-95 dark:bg-gray-800 w-72 shadow-md hover:shadow-lg hover:-translate-y-1 mx-auto rounded-xl hover:scale-110 duration-150 ">
           <div className="flex items-center ">
             <img
               alt="profil"
@@ -16,7 +16,7 @@ export default function CardsTrabajos({ nombre,imagen,website,repositorio,herram
           <p className="text-gray-600 px-2 pt-2 text-sm font-bold dark:text-white">
            {nombre}
           </p>
-          <div class="flex justify-between px-3 w-full pb-1 items-center ">
+          <div class="flex justify-around px-3 w-full pb-1  items-center ">
             <Link
             to={website}
             target="_blank"
@@ -42,13 +42,13 @@ export default function CardsTrabajos({ nombre,imagen,website,repositorio,herram
                       Repositorio
                     </span>
           </Link>
-          <div className="text-xs bg-white py-1 rounded-xl  items-center justify-center text-center  w-2/3 ">
+          <div className="text-xs bg-white py-1 rounded-xl  items-center justify-center text-center  w-2/4 ">
               Herramientas
               <div className="flex justify-around">
                {
                    herramientas.map((herra,id)=>(
                         <img
-                        className='w-8 object-contain' src={image[herra].url}alt={herra}
+                        className='w-8 object-cover' src={image[herra].url}alt={herra}
                         />
                     ))
                }
