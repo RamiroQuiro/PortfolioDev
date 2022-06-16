@@ -21,14 +21,14 @@ const changeHome=()=>{
 }
 
   return (
-    <div className="font-roboto transition-all ease-in-out flex justify-center items-center h-screen min-h-screen">
+    <div className="font-roboto transition-all ease-in-out flex justify-center items-center  min-h-screen">
 
       {/* OutLet condicionar si es home o page */}
 <div className={
   home?
-  "absolute duration-500 ease-in-out shadow-3xl transition-all z-20  flex justify-center items-center mx-auto rounded-full  bg-sky-900 bg-opacity-80   scale-30 h-full rotate-12"
+  "absolute duration-300 ease-in-out shadow-3xl transition-all z-20  flex justify-center items-center mx-auto rounded-full  bg-sky-900 bg-opacity-80 scale-30 h-full rotate-12"
 :
-"absolute duration-500 ease-in-out scale- transition-all flex justify-center mt-40  items-center mx-auto  h-full  "
+"absolute duration-300 ease-in-out transition-all flex justify-center mt-40  items-center mx-auto  h-full "
 }>
      <Outlet/>
 </div>

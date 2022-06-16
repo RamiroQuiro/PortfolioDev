@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import CardsTrabajos from './CardsTrabajos'
 import DoritoWeb from '../../images/A Pen by RamiroQuiroga - codepen.io.png'
 import PaginaTributo from '../../images/FireShot Capture 011 - A Pen by RamiroQuiroga - codepen.io.png'
@@ -9,11 +9,13 @@ import CifradoCesar from '../../images/FireShot Capture 008 - Cifrador Cesar - c
 import PageDocumentacion from '../../images/Poyecto FCC N°3 - codepen.io.png'
 import CardNetlify from '../../images/Document - thirsty-bell-74652b.netlify.app.png'
 import { titles } from '../../contexts/themes'
+import SkeletonCards from './SkeletonCards'
 
 
 
 export default function Labs() {
 
+    const [loading,setLoading]=useState(false)
 const labs=[{
     nombre:"cssToggle",
     descripcion:"Puro Css menu Toggle",
@@ -80,12 +82,26 @@ const labs=[{
 },
 ]
 
+setTimeout(()=>{
+    setLoading(true)
+},500)
   return (
     <div className="flex flex-col  z-50 items-center duration-150 ease-in-out gap-5 w-10/12 h-full  p-5">
     <h1 className={titles.h1}>Practicas y Pruebas</h1>
 
     <section className="w-full flex flex-wrap flex-col md:flex-row gap-5 gap-y-10 mb-8 md:mb-0 flex-between items-center p-8">
-      {labs.map((trabajo) => (
+    {
+        !loading?
+        <>
+        <SkeletonCards/>
+        <SkeletonCards/>
+        <SkeletonCards/>
+        <SkeletonCards/>
+        <SkeletonCards/>
+        </>
+        :
+      
+        labs.map((trabajo) => (
           <CardsTrabajos
           nombre={trabajo.nombre}
           imagen={trabajo.imagen}
@@ -93,8 +109,9 @@ const labs=[{
           repositorio={trabajo.repositorio}
           herramientas={trabajo.herramientas}
           />
-
-      ))}
+          
+          ))
+        }
       
     </section>
   </div>
