@@ -4,7 +4,7 @@ import { image } from '../../images/imagenes'
 
 export default function CardsTrabajos({ nombre,imagen,website,repositorio,herramientas,id }) {
   return (
-    <div className="bg-gray-50 bg-opacity-95 dark:bg-gray-800 w-72 shadow-md hover:shadow-lg hover:-translate-y-1 mx-auto rounded-xl hover:scale-110 duration-150 ">
+    <div className="bg-gray-50 bg-opacity-95  w-72 shadow-md hover:shadow-lg hover:-translate-y-1 mx-auto rounded-xl hover:scale-110 duration-150 ">
           <div className="flex items-center ">
             <img
               alt="profil"
@@ -13,7 +13,7 @@ export default function CardsTrabajos({ nombre,imagen,website,repositorio,herram
             />
            
           </div>
-          <p className="text-gray-600 px-2 pt-2 text-sm font-bold dark:text-white">
+          <p className="text-gray-600 px-2 pt-2 text-sm font-bold ">
            {nombre}
           </p>
           <div class="flex justify-around px-3 w-full pb-1  items-center ">

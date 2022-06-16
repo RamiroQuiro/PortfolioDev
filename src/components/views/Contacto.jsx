@@ -21,7 +21,7 @@ e.target.reset()
 
   return (
     <div className="flex flex-col  z-50 items-center duration-150 ease-in-out gap-5 w-10/12 h-full  p-5">
-      <div className={titles.h1 + "  dark:text-gray-200"}>Contactame</div>
+      <div className={titles.h1 + "  "}>Contactame</div>
       <div>
         <p className="font-medium text-gray-700 pb-3">
           Mis vias de comunicación para cualquier duda:
@@ -57,7 +57,7 @@ e.target.reset()
                   className: "bg-gray-800 text-xs font-bold",
                 });
               }}
-              className="object-cover filter saturate-50 hover:saturate-150"
+              className="object-cover cursor-pointer filter saturate-50 hover:saturate-150"
             >
               <img
                 className="object-cover w-2/3"
@@ -74,7 +74,7 @@ e.target.reset()
                   className: "bg-gray-800 text-xs font-bold",
                 });
               }}
-              className="object-cover filter saturate-50 hover:saturate-150"
+              className="object-cover filter cursor-pointer saturate-50 hover:saturate-150"
             >
               <img
                 className="object-cover w-2/3"
@@ -91,7 +91,7 @@ e.target.reset()
                   className: "bg-gray-800 text-xs font-bold",
                 });
               }}
-              className="object-cover filter saturate-50 hover:saturate-150"
+              className="object-cover filter cursor-pointer saturate-50 hover:saturate-150"
             >
         <img
                 className="object-cover w-2/3"

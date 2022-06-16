@@ -110,7 +110,7 @@ export default function Layout() {
             {fecha.minutos < 10 ? "0" + fecha.minutos : fecha.minutos}hs
           </p>
           <img
-            className="bg-sky-800 dark:bg-sky-100 bg-opacity-80 rounded-full -mt-5"
+            className="bg-sky-800 bg-opacity-80 rounded-full -mt-5"
             src={`https://openweathermap.org/img/wn/${clima.icono}.png`}
             alt={clima.descripcion}
           />
