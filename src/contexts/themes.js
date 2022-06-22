@@ -1,8 +1,9 @@
 export const themes ={
-    light: "bg-gradient-to-t from-gray-50 via-gray-100 to-gray-200 dark:form-gray-200 "
+    light: "font-roboto w-full   text-gray-600/90 ",
+    dark: "font-roboto   h-full text-gray-50  "
   }
 
 export const titles={
-  h1:"text-2xl text-sky-800 font-medium text-center ",
-  h2:"text-xl text-sky-800 font-medium text-center ",
+  h1:"text-5xl text-gray-700  font-roboto-medium text-center hover:-rotate-2 duration-200 hover:text-sky-900 ",
+  h2:"text-xl text-gray-700 font-medium text-center ",
 }

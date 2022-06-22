@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { image } from '../../images/imagenes'
+import CVCurriculum from '../../images/CVRamiroQuiroga.pdf'
 import "./titulo.css"
 
 export default function TituloRedes({home}) {
@@ -8,7 +9,7 @@ export default function TituloRedes({home}) {
     <div className="w-1/2  flex ">
           <div className="text-5xl  absolute text-sky-900  z-10 font-black  duration-500 -translate-y-44  translate-x-40">
             <div className={home?'duration-100':'duration-150 tituloActivo'}>
-            <h1 className=" peer duration-200 ">Ramiro Quiroga</h1>
+            <h1 className=" peer duration-200 hover:scale-110 hover:-rotate-6 hover:p-2 hover:bg-sky-900 hover:text-gray-100 rounded-lg">Ramiro Quiroga</h1>
             <h2 className="text-lg duration-200 delay-75  ">
               Desarrollo & Diseño Web
             </h2></div>
@@ -76,7 +77,7 @@ export default function TituloRedes({home}) {
           <div className={home?"flex flex-col gap-4 absolute duration-150  translate-x-96 z-30  items-center ":"skillActivo duration-150  flex flex-col gap-4 absolute  translate-x-96 z-30  items-center "}>
             <div className=" flex flex-col -translate-x-16 static items-center z-50 ">
               <li className="flex flex-col  duration-200  hover:break-normal w-16  border-0 hover:w-44 hover:border-0 hover:absolute hover:z-50 justify-center items-center mx-auto hover:translate-y-4 group cursor-pointer gap-3  -translate-x-10 translate-y-6  ">
-                <div className="bg-gradient-to-tr from-orange-300 to-orange-400 border-collapse border-0 group-hover:shadow-lg group-hover:shadow-gray-300 duration-200 h-full py-3 rounded-3xl grid grid-cols-3  justify-center mx-auto  text-3xl items-center">
+                <div className="bg-gradient-to-tr from-red-200 to-orange-400 border-collapse border-0 group-hover:shadow-lg group-hover:shadow-gray-300 duration-200 h-full py-3 rounded-3xl grid grid-cols-3  justify-center mx-auto  text-3xl items-center">
                   <div className="  relative block cursor-pointer">
                     <img
                       className="object-cover peer w-2/3 mx-auto saturate-50 hover:saturate-100 -0 duration-100 hover:scale-110"
@@ -192,7 +193,10 @@ export default function TituloRedes({home}) {
               </li>
             </div>
             <div className=" flex flex-col absolute -translate-x-32 translate-y-32  items-center ">
-              <li className="flex flex-col  duration-200  hover:break-normal w-16 hover:translate-y-4 group cursor-pointer gap-3  -translate-x-10 translate-y-6  ">
+              <Link 
+              to={CVCurriculum}
+              target="_blank"
+              className="flex flex-col  duration-200  hover:break-normal w-16 hover:translate-y-4 group cursor-pointer gap-3  -translate-x-10 translate-y-6  ">
                 <div className=" bg-gradient-to-tr from-zinc-300 to-zinc-400 group-hover:shadow-lg group-hover:shadow-gray-300 duration-200 h-full py-4 rounded-3xl flex justify-center text-3xl items-center">
                   <img
                     alt="CV"
@@ -204,7 +208,7 @@ export default function TituloRedes({home}) {
                 <p className="group-hover:font-bold  group-hover:break-normal font-medium text-center uppercase text-sm group-hover:text-sky-900  ">
                   CV
                 </p>
-              </li>
+              </Link>
             </div>
           </div>
         </div>

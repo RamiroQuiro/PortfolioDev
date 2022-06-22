@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, Outlet, useLocation, useParams } from "react-router-dom";
+import { themes } from "../../contexts/themes";
 import Menu from "./Menu";
 import Titulo from "./Titulo&Redes";
 
@@ -21,16 +22,16 @@ const changeHome=()=>{
 }
 
   return (
-    <div className="font-roboto transition-all ease-in-out flex justify-center items-center  min-h-screen">
+    <div className={"min-h-screen transition-all ease-in-out flex justify-center items-center "}>
 
       {/* OutLet condicionar si es home o page */}
 <div className={
   home?
   "absolute duration-300 ease-in-out shadow-3xl transition-all z-20  flex justify-center items-center mx-auto rounded-full  bg-sky-900 bg-opacity-80 scale-30 h-full rotate-12"
 :
-"absolute duration-300 ease-in-out transition-all flex justify-center mt-40  items-center mx-auto  h-full "
+"absolute duration-300 ease-in-out transition-all flex justify-center mt-40 bg-opacity-0 items-center mx-auto  h-full "
 }>
-     <Outlet/>
+     <Outlet context={[home]}/>
 </div>
       <div className="w-full  flex justify-around items-center">
         {/* Menu Parte Izquierda */}

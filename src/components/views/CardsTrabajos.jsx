@@ -48,7 +48,7 @@ export default function CardsTrabajos({ nombre,imagen,website,repositorio,herram
                {
                    herramientas.map((herra,id)=>(
                         <img
-                        className='w-8 object-cover' src={image[herra].url}alt={herra}
+                        className='w-7 object-contain' src={image[herra].url}alt={herra}
                         />
                     ))
                }

@@ -33,7 +33,7 @@ export default function Menu({home,changeHome,setHome}) {
       to="/trabajos"
       className={"flex flex-col delay-100 link duration-200 w-16 hover:-translate-y-1 group cursor-pointer gap-3 translate-x-24 "}>
         <div 
-        className="bg-gradient-to-tr  from-blue-400 to-blue-500 group-hover:shadow-lg  group-hover:shadow-gray-300 duration-200  py-4 rounded-3xl flex justify-center  items-center">
+        className="bg-gradient-to-tr  from-blue-400 to-blue-500 group-hover:shadow-lg group-hover:-translate-y-1 group-hover:shadow-gray-300 duration-200  py-4 rounded-3xl flex justify-center  items-center">
           <img
             className="group-hover:-translate-y-3 w-2/4 delay-150 duration-300"
             src="data:image/png;base64,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"
@@ -47,7 +47,7 @@ export default function Menu({home,changeHome,setHome}) {
       <NavLink 
       to='/labs'
       className={"flex flex-col link duration-200 delay-150 w-16 hover:-translate-y-1 group cursor-pointer gap-3 translate-x-10"}>
-        <div className="bg-gradient-to-tr from-red-300 via-red-300 to-red-400 group-hover:shadow-lg group-hover:shadow-gray-300 duration-200 h-full py-4 rounded-3xl flex justify-center text-3xl items-center">
+        <div className="bg-gradient-to-tr from-red-300 via-red-300 to-red-400 group-hover:shadow-lg group-hover:shadow-gray-300 duration-200 h-full py-4 rounded-3xl group-hover:-translate-y-1 flex justify-center text-3xl items-center">
           <img
             width={"60%"}
             alt="Laboratorio y Practicas"
@@ -62,7 +62,7 @@ export default function Menu({home,changeHome,setHome}) {
       <NavLink 
           to='/aboutme'
       className={"flex flex-col link duration-200 delay-200 hover:break-normal w-16 hover:-translate-y-1 group cursor-pointer gap-3  translate-x-10"}>
-        <div className="bg-gradient-to-tr from-orange-200 to-orange-300 group-hover:shadow-lg group-hover:shadow-gray-300 duration-200 h-full py-4 rounded-3xl flex justify-center text-3xl items-center">
+        <div className="bg-gradient-to-tr from-orange-200 to-orange-300 group-hover:shadow-lg group-hover:-translate-y-1 group-hover:shadow-gray-300 duration-200 h-full py-4 rounded-3xl flex justify-center text-3xl items-center">
           <img
             alt="sobre mi"
             width={"60%"}
@@ -77,7 +77,7 @@ export default function Menu({home,changeHome,setHome}) {
       <NavLink 
           to='/contacto'
       className={"flex flex-col link duration-200 delay-300 w-16 hover:-translate-y-1 group cursor-pointer gap-3  translate-x-24"}>
-        <div className="bg-gradient-to-tr from-teal-600 to-teal-700 group-hover:shadow-lg group-hover:shadow-gray-300 duration-200 h-full py-4 rounded-3xl flex justify-center text-3xl items-center">
+        <div className="bg-gradient-to-tr from-teal-600 to-teal-700 group-hover:shadow-lg group-hover:-translate-y-1 group-hover:shadow-gray-300 duration-200 h-full py-4 rounded-3xl flex justify-center text-3xl items-center">
           <img
             width="60%"
             className="group-hover:-translate-y-3 delay-150 duration-300"

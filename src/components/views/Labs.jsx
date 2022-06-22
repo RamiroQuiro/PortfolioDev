@@ -17,12 +17,12 @@ export default function Labs() {
 
     const [loading,setLoading]=useState(false)
 const labs=[{
-    nombre:"cssToggle",
-    descripcion:"Puro Css menu Toggle",
-    imagen:PureCssToggle,
-    url:"//codepen.io/ramiroquiroga/full/zYPOEyP",
-    repositorio:"//codepen.io/ramiroquiroga/pen/zYPOEyP",
-    herramientas:["css","html"],
+    nombre:"Card Practica",
+    descripcion:"Practica de card en FrontEnd",
+    imagen:CardNetlify,
+    url:"https://thirsty-bell-74652b.netlify.app/",
+    repositorio:"",
+    herramientas:["css","html",],
 },
 {
     nombre:"Cifrado Cesar",
@@ -73,12 +73,12 @@ const labs=[{
     herramientas:["css","html",],
 },
 {
-    nombre:"Card Practica",
-    descripcion:"Practica de card en FrontEnd",
-    imagen:CardNetlify,
-    url:"https://thirsty-bell-74652b.netlify.app/",
-    repositorio:"",
-    herramientas:["css","html",],
+    nombre:"cssToggle",
+    descripcion:"Puro Css menu Toggle",
+    imagen:PureCssToggle,
+    url:"//codepen.io/ramiroquiroga/full/zYPOEyP",
+    repositorio:"//codepen.io/ramiroquiroga/pen/zYPOEyP",
+    herramientas:["css","html"],
 },
 ]
 
@@ -86,10 +86,10 @@ setTimeout(()=>{
     setLoading(true)
 },500)
   return (
-    <div className="flex flex-col  z-50 items-center duration-150 ease-in-out gap-5 w-10/12 h-full  p-5">
-    <h1 className={titles.h1}>Practicas y Pruebas</h1>
+    <div className="flex flex-col  z-50 items-start duration-150 ease-in-out gap-5 w-10/12 h-full  p-5">
+    <h1 className={titles.h1+"ml-12 "}>Practicas y Pruebas</h1>
 
-    <section className="w-full flex flex-wrap flex-col md:flex-row gap-5 gap-y-10 mb-8 md:mb-0 flex-between items-center p-8">
+    <section className="w-full flex flex-wrap flex-col md:flex-row gap-5 gap-y-10 mb-8 md:mb-0 flex-between items-center pt-0 p-8">
     {
         !loading?
         <>

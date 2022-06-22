@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { titles } from "../../contexts/themes";
 import LoginTurnos  from "../../images/Login.png";
 import CartaOnline  from "../../images/React App - carta-online-kappa.vercel.app.png";
 import CardsTrabajos from "./CardsTrabajos";
@@ -38,10 +39,10 @@ herramientas:["react","css"],},
 ]
 
   return (
-    <div className="flex flex-col  z-50 items-center duration-150 ease-in-out gap-5 w-10/12 h-full  p-5">
-      <h1 className="text-2xl text-sky-800  z-10 font-medium ">Trabajos</h1>
+    <div className="flex flex-col  z-50 items-start duration-150 ease-in-out gap-5 w-10/12 h-full  p-5">
+     <h1 className={titles.h1+"ml-12 "}>Trabajos</h1>
 
-      <section className="w-full flex flex-wrap flex-col md:flex-row gap-5 gap-y-10 mb-8 md:mb-0 flex-between items-center p-8">
+     <section className="w-full flex flex-wrap flex-col md:flex-row gap-5 gap-y-10 mb-8 md:mb-0 flex-between items-center pt-0 p-8">
       
       {
         !loading?

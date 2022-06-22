@@ -98,7 +98,7 @@ export default function Layout() {
 
 
   return (
-    <div className={"flex flex-col font-roboto md:flex transition-all ease-in-out "}>
+    <div className={themes.light+"flex flex-col font-roboto md:flex transition-all ease-in-out "}>
       <nav className="flex w-full mx-auto items-center  absolute
        justify-between  py-8 px-20 font-medium uppercse text-sm ">
         <p className=" flex gap-5 cursor-pointer">
@@ -120,7 +120,7 @@ export default function Layout() {
           </p>
         </div>
       </nav>
-      <main  className=" ">
+      <main  className="  ">
         <Outlet />
       </main>
     </div>
