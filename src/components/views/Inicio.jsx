@@ -1,19 +1,18 @@
 import React from 'react'
 import image2 from "../../images/RamaCode (1).png";
 
-export default function Inicio({home}) {
+export default function Inicio({}) {
   return (
-    <div className='w-full flex flex-col  z-30 '>
+    <div className='w-full  '>
+      <div className=''>
     <img
       className={
-      home?
-        " opacity-0 duration-300 ease-in-out shadow-3xl transition-all z-30  flex justify-center items-center mx-auto rounded-full  bg-sky-900 bg-opacity-80   scale-75 h-full "
-        :
-        "scale-90 object-cover z-30 duration-300 opacity-100 -rotate-12 drop-shadow-xl "
+     
+        " opacity-100 duration-300 ease-in-out transition-all -z-10  flex justify-center items-center mx-auto scale-150 md:scale-75 h-full -rotate-12"
       }
       src={image2}
       alt="RamaCode"
-    />
+    /></div>
   </div>
   )
 }

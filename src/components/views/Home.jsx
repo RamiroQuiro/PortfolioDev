@@ -28,7 +28,7 @@ export default function Home() {
         className={
           home
             ? "absolute duration-300 ease-in-out shadow-3xl transition-all z-10  flex justify-center items-center mx-auto rounded-full  bg-sky-900 bg-opacity-80 scale-30 h-full rotate-12"
-            : "absolute duration-300 ease-in-out transition-all flex justify-center mt-40 bg-opacity-0 items-center mx-auto  h-full "
+            : "absolute duration-300 ease-in-out transition-all flex justify-center mt-40  items-center mx-auto  h-full "
         }
       >
         <Outlet context={[home]} />

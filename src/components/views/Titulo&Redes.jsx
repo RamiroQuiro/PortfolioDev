@@ -11,12 +11,12 @@ export default function TituloRedes({ home }) {
       "w-1/2   relative flex  h-full items-center  "
     :
     "w-full relative  flex  h-full md:items-start  justify-end "}>
-      <div className={home?"text-5xl text-sky-900  z-10 font-black duration-300 -translate-y-32 ml-16 "
+      <div className={home?"text-5xl text-sky-900  z-10 font-black duration-300 -translate-y-32 md:ml-16 scale-75 md:scale-100 "
     :
-    "text-5xl text-sky-900 absolute left-0 z-10 font-black duration-300 md:mt-5 flex md:w-full md:mx-auto items-start "  
+    "text-5xl text-sky-900 absolute left-0 z-10 font-black duration-300 md:mt-5 flex md:w-full md:mx-auto items-start  "  
     }>
         <div className={home ? "duration-200" : "duration-200  md:mx-auto md:text-center md:scale-75 md:translate-x-0 -translate-x-20 scale-50"}>
-          <h1 className=" peer duration-200 hover:scale-110 hover:-rotate-6 hover:p-2 hover:bg-sky-900 hover:text-gray-100 rounded-lg">
+          <h1 className=" peer duration-200 hover:scale-110  hover:-rotate-6 hover:p-2 hover:bg-sky-900 hover:text-gray-100 rounded-lg">
             Ramiro Quiroga
           </h1>
           <h2 className="text-lg duration-200 delay-75  ">
@@ -90,13 +90,13 @@ export default function TituloRedes({ home }) {
       <div
         className={
           home
-            ? "flex flex-col gap-4 absolute duration-150 visible translate-x-96 z-30  items-center "
+            ? "flex flex-col gap-4 absolute duration-150 visible  md:translate-x-52 z-30 scale-75 md:scale-100 items-center "
             : "invisible "
         }
       >
-        <div className=" flex flex-col -translate-x-16  items-center z-50 ">
-          <div className="flex flex-col duration-200  hover:break-normal w-16  border-0 hover:w-44 hover:border-0  hover:z-50 justify-center items-center mx-auto  group cursor-pointer gap-3  -translate-x-10 translate-y-6  ">
-            <div className="bg-gradient-to-tr from-red-200 to-orange-400 border-0 group-hover:shadow-lg group-hover:shadow-gray-300 duration-200 h-full py-3 hover:py-3 rounded-3xl grid grid-cols-3  justify-center mx-auto  text-3xl items-center">
+        <div className=" flex flex-col   items-center z-50 ">
+          <div className="flex flex-col duration-300  hover:break-normal  md:w-16 w-36 bg-red  border-0 md:hover:w-44 hover:border-0  hover:z-50 justify-center items-center mx-auto  group cursor-pointer gap-3 translate-x-20 translate-y-6 md:translate-y-10 md:translate-x-14  ">
+            <div className="md:bg-gradient-to-tr from-red-200 to-orange-400 border-0 md:group-hover:shadow-lg group-hover:shadow-gray-300 duration-300 h-full py-3 hover:py-3 rounded-3xl grid grid-cols-3  justify-center mx-auto  text-3xl items-center">
               <div className="  relative block cursor-pointer">
                 <img
                   className="object-cover peer w-2/3 mx-auto saturate-50 hover:saturate-100 -0 duration-100 hover:scale-110"
@@ -213,7 +213,7 @@ export default function TituloRedes({ home }) {
             </p>
           </div>
         </div>
-        <div className=" flex flex-col absolute -translate-x-32 translate-y-32  items-center ">
+        <div className=" flex flex-col absolute translate-y-56 translate-x-20 md:translate-x-10 md:translate-y-36 items-center ">
           <Link
             to={CVCurriculum}
             target="_blank"

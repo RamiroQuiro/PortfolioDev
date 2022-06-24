@@ -98,7 +98,7 @@ export default function Layout() {
 
 
   return (
-    <div className={themes.light+"flex flex-col font-roboto md:flex transition-all ease-in-out relative "}>
+    <div className={themes.light+"flex flex-col font-roboto md:flex transition-all  ease-in-out relative "}>
       <nav className="flex md:flex-row flex-col w-full  md:w-full mx-auto items-end md:items-center  absolute
         justify-end  md:justify-between  py-8 px-1 md:px-20 font-medium uppercse text-sm ">
         <p className=" flex gap-5 cursor-pointer">

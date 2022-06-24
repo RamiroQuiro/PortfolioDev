@@ -9,10 +9,10 @@ export default function Menu({home,changeHome,setHome}) {
 
 
   return (
-    <div className={home?"w-1/2 duration-500":"fixed scale-75 md:scale-100  z-40 left-10 duration-500"}>
+    <div className={home?"w-1/2 duration-500":"fixed scale-75 md:scale-100 left-5 z-50 md:left-10 duration-500"}>
     <ul 
     
-    className={home?"z-50 flex flex-col justify-end items-start md:items-center md:gap-7 scale-75 md:scale-100 pl-7 text-lg duration-500 ":"menuActivo flex flex-col justify-end items-center gap-7 text-lg duration-500 z-50  "}>
+    className={home?"z-50 flex flex-col justify-end items-start md:items-center md:gap-7 scale-90 md:scale-100 md:pl-7 text-lg duration-500 ":"menuActivo flex flex-col justify-end items-center gap-7 text-lg duration-500 z-50  "}>
       <NavLink 
       to="/"
       
