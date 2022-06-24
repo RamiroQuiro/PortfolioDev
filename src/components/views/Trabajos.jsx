@@ -26,7 +26,7 @@ const trabajos=[{
 {nombre:"CartaOnline",
 descripcion:"Carta online para restaurantes",
 imagen:CartaOnline,
-url:"//carta-online-kappa.vercel.app/",
+url:"//carta-online-kappa.vercel.app/login",
 repositorio:"//github.com/RamiroQuiro/CartaOnline",
 herramientas:["react","tailwindCSS","firebase"],},
 {nombre:"VQAgrimensura",
@@ -52,8 +52,9 @@ herramientas:["react","css"],},
         <SkeletonCards/>
         <SkeletonCards/>:
         </>:
-        trabajos.map((trabajo) => (
+        trabajos.map((trabajo,i) => (
             <CardsTrabajos
+            key={i}
             nombre={trabajo.nombre}
             imagen={trabajo.imagen}
             website={trabajo.url}

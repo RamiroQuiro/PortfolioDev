@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import AboutMe from "./components/views/AboutMe";
 import Contacto from "./components/views/Contacto";
@@ -9,7 +9,6 @@ import Trabajos from "./components/views/Trabajos";
 
 
 function App() {
-  const location=useLocation()
 
   return (
     <Routes>

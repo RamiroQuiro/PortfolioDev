@@ -34,11 +34,14 @@ const experiencia = [
 
 export default function Timeline() {
   return (
-    <div className="w-full mx-auto flex flex-col relative gap-10 justify-center items-center bg-gray-50">
+    <div className="w-full mx-auto flex flex-col relative gap-10 justify-center items-center ">
         <h1 className={titles.h2}>Experiencia</h1>
       <div className="w-1 blur-xxs inset-x-1/2 h-full mt-16 absolute bg-gray-500/50"></div>
       {experiencia?.map((item, i) => (
-        <div className="w-3/4 border-b-2 relative border-x-2 gap-2 hover:-translate-x-2 duration-150 flex flex-col items-start p-3 z-10 bg-white rounded-lg h- shadow-md  hover:border-l-orange-500/80 hover:pl-2  hover:border-l-2">
+        
+        <div 
+        key={i}
+        className="w-3/4 border-b-2 relative border-x-2 gap-2 hover:-translate-x-2 duration-150 flex flex-col items-start p-3 z-10 bg-white rounded-lg h- shadow-md  hover:border-l-orange-500/80 hover:pl-2  hover:border-l-2">
           <h3 className={titles.h2 + "underline text-left"}>
             {item.h3}
           </h3>

@@ -20,7 +20,7 @@ e.target.reset()
   }
 
   return (
-    <div className="flex flex-col  z-50 items-center duration-150 ease-in-out gap-5 w-10/12 h-full  p-5">
+    <div className="flex flex-col  z-30 items-center duration-150 ease-in-out gap-5 w-10/12 h-full pt-10 p-5">
       <div className={titles.h1 + "  "}>Contactame</div>
       <div>
         <p className="font-medium text-gray-700 pb-3">
@@ -104,7 +104,7 @@ e.target.reset()
       <form 
       onSubmit={handleEnviar}
       className="flex w-full ">
-        <div className="max-w-2xl  px-20 py-14  m-auto  shadow-xl rounded-full ">
+        <div className="max-w-2xl  px-20 py-5 border-b-2 border-sky-900/50  shadow-xl rounded-full ">
           <h2 className={titles.h2 + "mb-3 "}>O escribeme al WhatsApp</h2>
           <div className="grid max-w-xl grid-cols-2 gap-4 m-auto">
             <div className="col-span-2 lg:col-span-1">
@@ -130,7 +130,7 @@ e.target.reset()
               </div>
             </div>
             <div className="col-span-2">
-              <label className="text-gray-700" for="name">
+              <label className="text-gray-700" htmlFor="name">
                 <textarea
                   className="flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-sky-600 focus:border-transparent"
                  name="mensaje"

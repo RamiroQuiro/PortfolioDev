@@ -16,7 +16,7 @@ export default function CardsTrabajos({ nombre,imagen,website,repositorio,herram
           <p className="text-gray-600 px-2 pt-2 text-sm font-bold ">
            {nombre}
           </p>
-          <div class="flex justify-around px-3 w-full pb-1  items-center ">
+          <div className="flex justify-around px-3 w-full pb-1  items-center ">
             <Link
             to={website}
             target="_blank"

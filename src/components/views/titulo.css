@@ -14,7 +14,7 @@ text-align: center;
 }
 
 .redesActivo{
-    transform: translateX(1700%);
+    transform: translateX(1%);
     gap: 1rem;
     width: 8%;
     flex-direction: column;

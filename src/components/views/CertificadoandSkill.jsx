@@ -5,7 +5,7 @@ import certificadoJavaScript from '../../images/www.freecodecamp.org certificado
 
 export default function CertificadoandSkill() {
   return (
-    <div className="w-full mx-auto flex flex-col relative gap-10 justify-center items-center bg-gray-50">
+    <div className="w-full mx-auto flex flex-col relative gap-10 justify-center items-center">
     <h1 className={titles.h2}>Formación</h1>
 
     <div className='px-10'>

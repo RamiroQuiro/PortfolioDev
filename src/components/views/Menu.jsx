@@ -9,10 +9,10 @@ export default function Menu({home,changeHome,setHome}) {
 
 
   return (
-    <div className="w-1/2 duration-500">
+    <div className={home?"w-1/2 duration-500":"fixed scale-75 md:scale-100  z-40 left-10 duration-500"}>
     <ul 
     
-    className={home?"flex flex-col justify-end items-center gap-7 text-lg duration-500 ":"menuActivo flex flex-col justify-end items-center gap-7 text-lg duration-500 "}>
+    className={home?"z-50 flex flex-col justify-end items-start md:items-center md:gap-7 scale-75 md:scale-100 pl-7 text-lg duration-500 ":"menuActivo flex flex-col justify-end items-center gap-7 text-lg duration-500 z-50  "}>
       <NavLink 
       to="/"
       
@@ -76,8 +76,8 @@ export default function Menu({home,changeHome,setHome}) {
       </NavLink >
       <NavLink 
           to='/contacto'
-      className={"flex flex-col link duration-200 delay-300 w-16 hover:-translate-y-1 group cursor-pointer gap-3  translate-x-24"}>
-        <div className="bg-gradient-to-tr from-teal-600 to-teal-700 group-hover:shadow-lg group-hover:-translate-y-1 group-hover:shadow-gray-300 duration-200 h-full py-4 rounded-3xl flex justify-center text-3xl items-center">
+      className={"flex flex-col link duration-200 delay-300 w-16 hover:-translate-y-1 group cursor-pointer gap-3 z-50 translate-x-24"}>
+        <div className="bg-gradient-to-tr from-teal-600 to-teal-700 group-hover:shadow-lg group-hover:-translate-y-1 group-hover:shadow-gray-300 duration-200 h-full py-4 rounded-3xl flex justify-center text-3xl items-center z-50 ">
           <img
             width="60%"
             className="group-hover:-translate-y-3 delay-150 duration-300"
@@ -85,7 +85,7 @@ export default function Menu({home,changeHome,setHome}) {
             src="data:image/png;base64,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"
           />
         </div>
-        <p className="group-hover:font-bold font-medium text-center uppercase text-sm group-hover:text-sky-900  ">
+        <p className="group-hover:font-bold font-medium text-center uppercase text-sm group-hover:text-sky-900 z-50  ">
           Contacto
         </p>
       </NavLink >
