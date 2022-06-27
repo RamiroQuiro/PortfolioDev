@@ -26,7 +26,7 @@ e.target.reset()
         <p className="font-medium text-gray-700 pb-3">
           Mis vias de comunicación para cualquier duda:
         </p>
-        <div className="flex justify-around items-center py-3 h-8 ">
+        <div className="flex w-2/3 md:w-auto mx-auto justify-around items-center py-3 h-8 ">
           <Link
             to="//facebook.com/ramirochangomoreno/"
             className="object-cover filter saturate-50 hover:saturate-150"
@@ -104,7 +104,7 @@ e.target.reset()
       <form 
       onSubmit={handleEnviar}
       className="flex w-full ">
-        <div className="max-w-2xl  px-20 py-5 border-b-2 border-sky-900/50  shadow-xl rounded-full ">
+        <div className="md:max-w-2xl px-10 md:px-20 py-5 border-b-2 md:border-sky-900/50  md:shadow-xl rounded-full ">
           <h2 className={titles.h2 + "mb-3 "}>O escribeme al WhatsApp</h2>
           <div className="grid max-w-xl grid-cols-2 gap-4 m-auto">
             <div className="col-span-2 lg:col-span-1">
@@ -144,7 +144,7 @@ e.target.reset()
             <div className="col-span-2 text-center">
               <button
                type="submit"
-                className="py-2 px-4  bg-sky-600 hover:bg-sky-700 focus:ring-sky-500 focus:ring-offset-sky-200 text-white  transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+                className="py-2 px-4 md:px-1  bg-sky-600 hover:bg-sky-700 focus:ring-sky-500 focus:ring-offset-sky-200 text-white  transition ease-in duration-200 text-xs text-center md:text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
               >
                 Mandar WhatsApp
               </button>
