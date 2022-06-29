@@ -99,6 +99,8 @@ export default function TituloRedes({ home }) {
             <div className="bg-gray-300/50 md:bg-gradient-to-tr from-red-200 to-orange-400 border-0 md:group-hover:shadow-lg group-hover:shadow-gray-300 duration-300 h-full py-3 hover:py-3 rounded-3xl grid grid-cols-3  justify-center mx-auto  text-3xl items-center">
               <div className="  relative block cursor-pointer">
                 <img
+                width="100px"
+                height="100px"
                   className="object-cover peer w-2/3 mx-auto saturate-50 hover:saturate-100 -0 duration-100 hover:scale-110"
                   alt="JS"
                   src={image.JS.url}
@@ -109,6 +111,8 @@ export default function TituloRedes({ home }) {
               </div>
               <div className="  relative block cursor-pointer">
                 <img
+                width="100px"
+                height="100px"
                   alt="React"
                   className=" peer object-cover w-2/3 mx-auto saturate-50 hover:saturate-100 -0 duration-100 hover:scale-110"
                   src={image.react.url}
@@ -119,6 +123,8 @@ export default function TituloRedes({ home }) {
               </div>
               <div className="  relative block cursor-pointer">
                 <img
+                width="100px"
+                height="100px"
                   alt="css3"
                   className="object-cover peer w-2/3 mx-auto saturate-50 hover:saturate-100 -0 duration-100 hover:scale-110"
                   src={image.css.url}
@@ -129,6 +135,8 @@ export default function TituloRedes({ home }) {
               </div>
               <div className="  relative block cursor-pointer">
                 <img
+                width="100px"
+                height="100px"
                   alt="html5"
                   className="object-cover peer w-2/3 mx-auto saturate-50 hover:saturate-100 -0 duration-100 hover:scale-110"
                   src={image.html.url}
@@ -139,6 +147,8 @@ export default function TituloRedes({ home }) {
               </div>
               <div className="  relative block cursor-pointer">
                 <img
+                width="100px"
+                height="100px"
                   className="object-cover w-2/3 peer mx-auto saturate-50 hover:saturate-100 -0 duration-100 hover:scale-110"
                   alt="tailwindCSS"
                   src={image.tailwindCSS.url}
@@ -149,6 +159,8 @@ export default function TituloRedes({ home }) {
               </div>
               <div className="  relative block cursor-pointer">
                 <img
+                width="100px"
+                height="100px"
                   className="object-cover peer w-2/3 mx-auto saturate-50 hover:saturate-100 -0 duration-100 hover:scale-110"
                   alt="nodeJS"
                   src={image.nodeJS.url}
@@ -159,6 +171,8 @@ export default function TituloRedes({ home }) {
               </div>
               <div className="  relative block cursor-pointer">
                 <img
+                width="100px"
+                height="100px"
                   alt="mongoDB"
                   className="object-cover peer w-2/3 mx-auto saturate-50 hover:saturate-100 -0 duration-100 hover:scale-110"
                   src={image.mongoDB.url}
@@ -169,6 +183,8 @@ export default function TituloRedes({ home }) {
               </div>
               <div className="  relative block cursor-pointer">
                 <img
+                width="100px"
+                height="100px"
                   alt="firebase"
                   className="object-cover peer w-2/3 mx-auto saturate-50 hover:saturate-100 -0 duration-100 hover:scale-110"
                   src={image.firebase.url}
@@ -179,6 +195,8 @@ export default function TituloRedes({ home }) {
               </div>
               <div className="  relative block cursor-pointer">
                 <img
+                width="100px"
+                height="100px"
                   className="object-cover peer w-2/3 mx-auto saturate-50 hover:saturate-100 -0 duration-100 hover:scale-110"
                   alt="git"
                   src={image.git.url}
@@ -189,6 +207,8 @@ export default function TituloRedes({ home }) {
               </div>
               <div className="  relative block cursor-pointer">
                 <img
+                width="100px"
+                height="100px"
                   className="object-cover peer w-2/3 mx-auto saturate-50 hover:saturate-100 -0 duration-100 hover:scale-110"
                   alt="phothoshop"
                   src={image.photoshop.url}
@@ -199,6 +219,8 @@ export default function TituloRedes({ home }) {
               </div>
               <div className="  relative block cursor-pointer">
                 <img
+                width="100px"
+                height="100px"
                   className="object-cover peer w-2/3 mx-auto saturate-50 hover:saturate-100 -0 duration-100 hover:scale-110"
                   alt="captureOne"
                   src={image.captureOne.url}
