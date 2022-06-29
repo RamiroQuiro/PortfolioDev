@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { image } from "../../images/imagenes";
 import CVCurriculum from "../../images/CVRamiroQuiroga.pdf";
-import "./titulo.css";
 
 export default function TituloRedes({ home }) {
   return (
@@ -38,8 +37,8 @@ export default function TituloRedes({ home }) {
           >
             <img
               alt="LinkedIn"
-              width="full"
-              height="full"
+              width="25px"
+              height="25px"
               src={image.linkedin.url}
             />
             <span className="text-xs z-40 bg-opacity-90 text-center p-1.5 bg-sky-800 text-white font-roboto-mono-bold absolute -ml-3 translate-y-5 group-hover:translate-y-0 duration-200 invisible group-hover:visible opacity-0 group-hover:opacity-100 rounded-lg">
@@ -51,7 +50,9 @@ export default function TituloRedes({ home }) {
             target="_blank"
             className="group relative block cursor-pointer"
           >
-            <img alt="Github" src={image.gitHub.url} />
+            <img width="25px"
+              height="25px"
+              alt="Github" src={image.gitHub.url} />
             <span className="text-xs z-40 bg-opacity-90 text-center p-1.5 bg-sky-800 text-white font-roboto-mono-light absolute -ml-3 translate-y-5 group-hover:translate-y-0 duration-200 invisible group-hover:visible opacity-0 group-hover:opacity-100 rounded-lg">
               GitHub
             </span>
@@ -63,8 +64,9 @@ export default function TituloRedes({ home }) {
           >
             <img
               alt="codepen"
-              width="70%"
-              className=" w-10 -mr-2"
+              width="25px"
+              height="25px"
+              className=" w- -mr-2"
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAF8ElEQVRoge1ZS4wUVRQ991W1QESMH5SJCRrkF2dgmLpdQUBjmyhuTPzEdi2/wQRcofJfgEpEATcCyjdx6biTDEpiTBTQoevVzAhEhZ2ik0gi38BAT73rgh7TdL/qqp7pWRjnLN+9795z333f+4BRjOL/DRopw7Nnz34gk8l8DGCcMWZ5d3f3nyPhxxkJo8ycdxynE4APYDoRLW5qarrQ19enG+2roRmYO3fug1EU7RKRl2NUOgcGBtp7e3v/aJTPhmWAmfPGmE4AXENtmlKqodkYdgZ8359kjNkN4MW6HBN9RUTthULh9+H4H1YGmDkvIocBtA2h+1QRWdzU1PR3X19fOFQOQ8oAM08GsBfAQov4OoANALZXtK8C8C6AcZY+XwNo11r/Vi8XVac+eZ7XDuAkLORF5DgRtWmtd1TKtNY7lFItAL612H0OwM/MvLpeTqkzMGfOnEeUUnuJ6BmL+DqATVrrDwEYAGBmKVfQWg/6Is/zlhHRdgDjLba+j6JoSU9Pz9k0vNJES57ntTuOczKG/NEoilq11lsHySdAwjDcE0XRLCL6xiJ/0nGcnrTZqJkB3/enGGP2AXjaIr4GYHP5qJejRgZu81/KxjYAd1nkx4hoSRAEv8ZxjIuQPM9rN8b0xpA/Yox5rI5Rj4OEYbjHGDOTiL60yBeISDczr87n89Yds2pUstnsDGPMASKab9G/BOBNrfV+AGKRAwB83282xpwqb1NKtRQKhdM1giFmXgJgG4C7LXJrNqoyICJhDPlO13VbtNb74sjncjnX87x1xpiqU9YYo5l5bS6Xc2MCEK31Ptd1WwB0WuQLRCSobLRNobGWtrPFYnFRV1fXuRjnyGazLVevXv2BiN4DMMaiMgbAlsuXLx/3fb85zk5XV9e5YrG4CIBtF6riZgvAttimZTKZX0pnwG3I5XIuM68WkUBEsnHE/jVO5Btjupn5fWbOVMqZOZ/JZE4BmGbpXpX5KrLMbGKCGMShwfu97/vNURQdJCLfoncewAoR6SeiTwE0WXR6lVKvFQqFntL7YSeAV2r4Lmqt7xhuAABwnog+F5GlsE+XDmPMiu7u7vMA0NbWNlEptRNA3qJ7g4j2icirACYm+K0/ACLaICIbY4hW4jyAFVrrDpuQmfMAdqYgCgA3cOvu9E5ZW1UAiSddEARblFIM4ESCaocxpjmOPABorTtu3rw5g4j2JNjqVUo9DmBrEr80i1gAQESSptU4AFWLshKu67oick+SHgD09/cn3tVsAdy20pl5rTFGxyzUcjyvlOopTRMrmDmvlDoN+1ooR6sx5sexY8euSdD77y/itOdAJbnmIAhWElGWiKpORwB5pdRpZs7XGnURKSilOAiClcVisQXAFwm+U50DcXecvwCsrFykuVzOvXLlyioAm5BupwKAIoAdADZqrYsV/mvtVDe11rf5SBvAGWPME4NTwoZsNtsC4GDSaSwiBcdxFtW62JUOtWMApiYFYJtC/Za26Uqpg62trQ/FOQ2C4NT48ePnich63NrDK3EDwLoJEybMr0WemSdnMpnPLOSt3GwZmElEB0RknsXARSJaFQTBQdR3nRal1Kyk63Q2m20XkQ8ATLDIjzqOs+TEiRNnagZQgvI8bykR7QBwp0V+BMCyWlWEiqlotNaxJZw07+0pU6Zs6+joiKqIxtg0YRjuUUrNhr2KsBBDrCJUYPC9/VPce9txnDla66028kC6qsSQqghJGRjOe7scaUavoVUEJLy3ieg7EUld5ai3Mpe6imDLADM/KiL7iegpS9/LIvJWGIZ7UWODGG4AAIC2traHlVJ7ATxrEV8TkfVE9FFZmxGRNUS0GZZnoYgcdhxn+VAKvcOqTpdOzU8A3DtEE5dE5O16R70cwy6vM3MTgN0AXqiza6frustrFQrSoGE/NKVs7AZwX4LqRRFZHYZh0qMmFRr6xVT67NgF4KUYlUMDAwOvN/KLaUR+KUvZ2AXg/lLTBRFZ06hRL8eIfbP6vj9JRHYCKEZR9Eatm+woRjGKoeMfb5rDvEZdSvgAAAAASUVORK5CYII="
             />
             <span className="text-xs z-40 bg-opacity-90 text-center p-1.5 bg-sky-800 text-white font-roboto-mono-light absolute -ml-3 translate-y-5 group-hover:translate-y-0 duration-200 invisible group-hover:visible opacity-0 group-hover:opacity-100 rounded-lg">
@@ -77,6 +79,8 @@ export default function TituloRedes({ home }) {
             className="group relative block cursor-pointer"
           >
             <img
+              width="25px"
+              height="25px"
               alt="Behancen"
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABuklEQVRIie2UPWsUURiFn3dmBxaiRCtNXAUFBREF5y47sbEQJCKk0l4bt7O0UgT9CWKh5BdIWsEiVjbLLHsFU0hARNSIhQgplblwLJyN65LdNbPBRg9c7sf7nnPuN/zHBNhgp9lsXpb0GGhU1Nsws3av13vWH4gGo1OKAzRKjS1EwwlTiPdxeJzBrqM2JvYSeAsg6ZCZnQH2DMdKLAH1nRose+8f9TtZlh0IIawCpwEPrA7kXqxiAIBzbh14k+f5knPuAbAM3ACuAe+BeWBmFP9PzmAWWCjbSVmvA8e99ydqtdq8pOeVDSQtFkVxKsuyBnCrHL5rZsecc2uSEjO7U9kgiqLzSZJczfP8E/AUII7jV2a2KekhQL1efz2KP/EMJN0GDrZarSchhBUzu1kUxXdJiqKIEMKVEAJmti1/ogGwBrzodrtf0zSdBTCzk3Ecv5N0D/hsZt8kVTPw3i8COOfmgP5e30+S5FKn05kDSNP0upmd247/27qcc4PT+AB8Kdt7gaP8ukUAm/x8cPuBs0OT2tIdt4IjZRmFfcCFMXHgL/xFwwYbu6D5caSBmbWHE3YqLqk9Bf9fxA+7y4hfqSsJ8QAAAABJRU5ErkJggg=="
             />{" "}
