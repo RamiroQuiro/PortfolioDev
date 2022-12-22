@@ -12,7 +12,7 @@ export default function Menu({home,changeHome,setHome}) {
     <div className={home?"w-1/2 duration-500":"fixed scale-75 md:scale-100 left-5 z-50 md:left-10 duration-500"}>
     <ul 
     
-    className={home?"z-50 flex flex-col justify-end items-start md:items-center gap-5 md:gap-6 scale-90 md:scale-100 md:pl-7 text-lg duration-500 ":"menuActivo flex flex-col justify-end items-center gap-6 text-lg duration-500 z-50  "}>
+    className={home?"z-50 flex flex-col justify-end items-start md:items-center gap-5 md:gap-6 scale-90 md:scale-100 md:pl-7 text-lg duration-500 ":"menuActivo flex flex-col justify-end gap-2 md:gap-3 items-center text-lg duration-500 z-50  "}>
       <NavLink 
       to="/"
       
@@ -31,9 +31,9 @@ export default function Menu({home,changeHome,setHome}) {
       </NavLink>
       <NavLink 
       to="/trabajos"
-      className={"flex flex-col delay-100 link duration-200 w-16 hover:-translate-y-1 group cursor-pointer gap-3 translate-x-24 "}>
+      className={"flex flex-col delay-100 link duration-200 w-16 hover:-translate-y-1 group cursor-pointer md:gap-3 gap-1 translate-x-24 "}>
         <div 
-        className="bg-gradient-to-tr  from-blue-400 to-blue-500 group-hover:shadow-lg group-hover:-translate-y-1 group-hover:shadow-gray-300 duration-200  py-4 rounded-3xl flex justify-center  items-center">
+        className="bg-gradient-to-tr  from-blue-400 to-blue-500 group-hover:shadow-lg group-hover:-translate-y-1 group-hover:shadow-gray-300 duration-200  py-4 rounded-lg md:rounded-3xl flex justify-center  items-center">
           <img
           width="100px"
           height="100px"
@@ -48,8 +48,8 @@ export default function Menu({home,changeHome,setHome}) {
       </NavLink>
       <NavLink 
       to='/labs'
-      className={"flex flex-col link duration-200 delay-150 w-16 hover:-translate-y-1 group cursor-pointer gap-3 translate-x-10"}>
-        <div className="bg-gradient-to-tr from-red-300 via-red-300 to-red-400 group-hover:shadow-lg group-hover:shadow-gray-300 duration-200 h-full py-4 rounded-3xl group-hover:-translate-y-1 flex justify-center text-3xl items-center">
+      className={"flex flex-col link duration-200 delay-150 w-16 hover:-translate-y-1 group cursor-pointer md:gap-3 gap-1 translate-x-10"}>
+        <div className="bg-gradient-to-tr from-red-300 via-red-300 to-red-400 group-hover:shadow-lg group-hover:shadow-gray-300 duration-200 h-full py-4  rounded-lg md:rounded-3xl group-hover:-translate-y-1 flex justify-center text-3xl items-center">
           <img
             width="100px"
             height="100px"
@@ -64,8 +64,8 @@ export default function Menu({home,changeHome,setHome}) {
       </NavLink >
       <NavLink 
           to='/aboutme'
-      className={"flex flex-col link duration-200 delay-200 hover:break-normal w-16 hover:-translate-y-1 group cursor-pointer gap-3  translate-x-10"}>
-        <div className="bg-gradient-to-tr from-orange-200 to-orange-300 group-hover:shadow-lg group-hover:-translate-y-1 group-hover:shadow-gray-300 duration-200 h-full py-4 rounded-3xl flex justify-center text-3xl items-center">
+      className={"flex flex-col link duration-200 delay-200 hover:break-normal w-16 hover:-translate-y-1 group cursor-pointer md:gap-3 gap-1  translate-x-10"}>
+        <div className="bg-gradient-to-tr from-orange-200 to-orange-300 group-hover:shadow-lg group-hover:-translate-y-1 group-hover:shadow-gray-300 duration-200 h-full py-4 rounded-lg md:rounded-3xl flex justify-center text-3xl items-center">
           <img
             alt="sobre mi"
             width="100px"
@@ -80,8 +80,8 @@ export default function Menu({home,changeHome,setHome}) {
       </NavLink >
       <NavLink 
           to='/contacto'
-      className={"flex flex-col link duration-200 delay-300 w-16 hover:-translate-y-1 group cursor-pointer gap-3 z-50 translate-x-24"}>
-        <div className="bg-gradient-to-tr from-teal-600 to-teal-700 group-hover:shadow-lg group-hover:-translate-y-1 group-hover:shadow-gray-300 duration-200 h-full py-4 rounded-3xl flex justify-center text-3xl items-center z-50 ">
+      className={"flex flex-col link duration-200 delay-300 w-16 hover:-translate-y-1 group cursor-pointer md:gap-3 gap-1 z-50 translate-x-24"}>
+        <div className="bg-gradient-to-tr from-teal-600 to-teal-700 group-hover:shadow-lg group-hover:-translate-y-1 group-hover:shadow-gray-300 duration-200 h-full py-4 rounded-lg md:rounded-3xl flex justify-center text-3xl items-center z-50 ">
           <img
             width="100px"
             height="100px"

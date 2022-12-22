@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { image } from "../../images/imagenes";
-import CVCurriculum from "../../images/CVRamiroQuiroga.pdf";
+import CVCurriculum from "../../images/CVRamiroQuirogaSinFoto.pdf";
 
 export default function TituloRedes({ home }) {
   return (
@@ -239,6 +239,8 @@ export default function TituloRedes({ home }) {
             </p>
           </div>
         </div>
+
+         {/* curriculim */}
         <div className=" flex flex-col absolute translate-y-56 translate-x-20 md:translate-x-10 md:translate-y-36 items-center ">
           <Link
             to={CVCurriculum}
