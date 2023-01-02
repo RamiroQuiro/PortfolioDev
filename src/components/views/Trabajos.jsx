@@ -20,7 +20,7 @@ export default function Trabajos() {
       nombre: "Practicas en ReactJS",
       descripcion: "Pagina Personal en donde voy subiendo cosas pequeñas",
       imagen: Practica,
-      url: "//practica-reactjs.vercel.app",
+      url: "//practicas-reactjs.vercel.app",
       repositorio: "https://github.com/RamiroQuiro/Galeria360",
       herramientas: ["react", "tailwindCSS", "nodeJS"],
     },
