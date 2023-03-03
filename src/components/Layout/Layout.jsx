@@ -98,9 +98,9 @@ export default function Layout() {
 
 
   return (
-    <div className={themes.light+"flex flex-col font-roboto md:flex transition-all  ease-in-out relative "}>
-      <nav className="flex md:flex-row flex-col w-full  md:w-full mx-auto items-end md:items-center  absolute
-        justify-end  md:justify-between  py-8 pr-5 md:px-20 font-medium uppercse text-sm ">
+    <div className={themes.light+"flex w-screen overflow-x-hidden flex-col font-roboto md:flex transition-all min-h-screen ease-in-out relative "}>
+      <nav className="flex md:flex-row flex-col w-full  md:w-full mx-auto items-start ml-5 justify-around md:items-center  absolute top-0 left-0
+        md:justify-between  gap-5 py-5 md:px-20 font-medium uppercse text-sm ">
         <p className=" flex gap-5 cursor-pointer">
           {diasSemana[fecha.dia]} , {fecha.dia} de {meses[fecha.mes]}
         </p>
@@ -120,7 +120,7 @@ export default function Layout() {
           </p>
         </div>
       </nav>
-      <main  className="  ">
+      <main  className=" ">
         <Outlet />
       </main>
     </div>

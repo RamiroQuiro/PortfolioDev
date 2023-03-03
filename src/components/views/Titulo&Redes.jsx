@@ -7,14 +7,14 @@ export default function TituloRedes({ home }) {
   return (
     <div className={
       home?
-      "w-1/2   relative flex  h-full items-center  "
+      "w-1/2   relative flex   h-full items-center  "
     :
-    "w-full relative  flex  h-full md:items-start  justify-end "}>
-      <div className={home?"text-5xl text-sky-900  z-10 font-black duration-300 -translate-y-32 md:ml-16 scale-75 md:scale-100 "
+    "w-full relative  flex  h-full md:items-start justify-end "}>
+      <div className={home?"text-5xl text-sky-900  z-10 font-black duration-300 -translate-y-48 md:ml-16 scale-75 md:scale-100 "
     :
     "text-5xl text-sky-900 absolute left-0 z-10 font-black duration-300 md:mt-5 flex md:w-full md:mx-auto items-start  "  
     }>
-        <div className={home ? "duration-200" : "duration-200  md:mx-auto md:text-center md:scale-75 md:translate-x-0 -translate-x-20 scale-50"}>
+        <div className={home ? "duration-200" : "duration-200  md:mx-auto md:text-center md:scale-75 md:translate-x-0 translate-x-20 scale-50"}>
           <h1 className=" peer duration-200 hover:scale-110  hover:-rotate-6 hover:p-2 hover:bg-sky-900 hover:text-gray-100 rounded-lg">
             Ramiro Quiroga
           </h1>
@@ -94,7 +94,7 @@ export default function TituloRedes({ home }) {
       <div
         className={
           home
-            ? "flex flex-col gap-4 absolute duration-150   md:translate-x-52 z-30 scale-75 md:scale-100 items-center "
+            ? "flex flex-col gap-4 absolute duration-150   md:translate-x-52 translate-y-10 -translate-x-5 z-30 scale-75 md:scale-100 items-center "
             : "hidden "
         }
       >

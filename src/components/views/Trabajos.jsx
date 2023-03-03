@@ -6,6 +6,7 @@ import CartaOnline from "../../images/CartaOnline.png";
 import CardsTrabajos from "./CardsTrabajos";
 import Galeria360 from "../../images/Galeria360.png"
 import Practica from "../../images/PracticasReactJS.png"
+import Ecommerce from "../../images/Ecommerce.png"
 import SkeletonCards from "./SkeletonCards";
 
 export default function Trabajos() {
@@ -22,6 +23,14 @@ export default function Trabajos() {
       imagen: Practica,
       url: "//practicas-reactjs.vercel.app",
       repositorio: "https://github.com/RamiroQuiro/Galeria360",
+      herramientas: ["react", "tailwindCSS", "nodeJS"],
+    },
+    {
+      nombre: "Ecommerce con Planilla de Calulos Google",
+      descripcion: "Tienda Virtual con base de datos de tus productos con una simple y poderosa planilla de calculos.",
+      imagen: Ecommerce,
+      url: "//tienda-virtual-psi.vercel.app/",
+      repositorio: "https://github.com/RamiroQuiro/ecommerceNextJS",
       herramientas: ["react", "tailwindCSS", "nodeJS"],
     },
     {
@@ -60,10 +69,10 @@ export default function Trabajos() {
   ];
 
   return (
-    <div className="flex flex-col  z-50 items-start duration-150 ease-in-out gap-5 w-10/12 h-full  p-5">
+    <div className="flex flex-col  z-50 items-start duration-150 ease-in-out gap-5 w-full md:w-10/12 h-full ml-5 pt-8  md:py-5">
       <h1 className={titles.h1 + "ml-12 "}>Trabajos</h1>
 
-      <section className="w-full flex flex-wrap flex-col md:flex-row gap-5 gap-y-10 mb-8 md:mb-0 flex-between items-center pt-0 p-8">
+      <section className="w-full flex flex-wrap flex-col md:flex-row gap-5 md:gap-y-10 mb-8 md:mb-0 flex-between items-center pt-0 p-8">
         {!loading ? (
           <>
             <SkeletonCards />

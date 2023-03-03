@@ -4,7 +4,7 @@ import { image } from '../../images/imagenes'
 
 export default function CardsTrabajos({ nombre,imagen,website,repositorio,herramientas,id }) {
   return (
-    <div className="bg-gray-50 bg-opacity-95  md:w-72 shadow-md hover:shadow-lg hover:-translate-y-1 mx-auto rounded-xl hover:scale-110 duration-150 ">
+    <div className="bg-gray-50 bg-opacity-95 w-10/12 md:w-72 shadow-md hover:shadow-lg hover:-translate-y-1 mx-auto rounded-xl hover:scale-105 duration-150 ">
           <div className="flex items-center ">
             <img
               alt="profil"
