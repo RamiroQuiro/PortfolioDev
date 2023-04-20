@@ -31,8 +31,8 @@ export default function Trabajos() {
       descripcion: "Landing Page en donde las noticias son obtenidas desde una planilla de google y las fotos son cargadas a Firebase en dos pasos.",
       imagen: FernandezVoley,
       url: "//fernandezvoley.vercel.app/",
-      repositorio: "https://github.com/RamiroQuiro/ecommerceNextJS",
-      herramientas: ["react", "tailwindCSS", "googleSheet","firebase"],
+      repositorio: "https://github.com/RamiroQuiro/fernandezVoley",
+      herramientas: ["react", "tailwindCSS", "firebase"],
     },
     {
       nombre: "Ecommerce con Planilla de Calulos Google",
