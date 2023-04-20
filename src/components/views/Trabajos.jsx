@@ -7,6 +7,7 @@ import CardsTrabajos from "./CardsTrabajos";
 import Galeria360 from "../../images/Galeria360.png"
 import Practica from "../../images/PracticasReactJS.png"
 import Ecommerce from "../../images/Ecommerce.png"
+import FernandezVoley from "../../images/FernandezVoley.png"
 import SkeletonCards from "./SkeletonCards";
 
 export default function Trabajos() {
@@ -24,6 +25,14 @@ export default function Trabajos() {
       url: "//practicas-reactjs.vercel.app",
       repositorio: "https://github.com/RamiroQuiro/Galeria360",
       herramientas: ["react", "tailwindCSS", "nodeJS"],
+    },
+    {
+      nombre: "Landing Page Fernandez Voley",
+      descripcion: "Landing Page en donde las noticias son obtenidas desde una planilla de google y las fotos son cargadas a Firebase en dos pasos.",
+      imagen: FernandezVoley,
+      url: "//fernandezvoley.vercel.app/",
+      repositorio: "https://github.com/RamiroQuiro/ecommerceNextJS",
+      herramientas: ["react", "tailwindCSS", "googleSheet","firebase"],
     },
     {
       nombre: "Ecommerce con Planilla de Calulos Google",
