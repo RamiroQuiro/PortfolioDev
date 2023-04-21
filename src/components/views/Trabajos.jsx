@@ -31,7 +31,7 @@ export default function Trabajos() {
       descripcion: "Landing Page en donde las noticias son obtenidas desde una planilla de google y las fotos son cargadas a Firebase en dos pasos.",
       imagen: FernandezVoley,
       url: "//fernandezvoley.vercel.app/",
-      repositorio: "https://github.com/RamiroQuiro/fernandezVoley",
+      repositorio: "//github.com/RamiroQuiro/fernandezVoley",
       herramientas: ["react", "tailwindCSS", "firebase"],
     },
     {
@@ -39,7 +39,7 @@ export default function Trabajos() {
       descripcion: "Tienda Virtual con base de datos de tus productos con una simple y poderosa planilla de calculos.",
       imagen: Ecommerce,
       url: "//tienda-virtual-psi.vercel.app/",
-      repositorio: "https://github.com/RamiroQuiro/ecommerceNextJS",
+      repositorio: "//github.com/RamiroQuiro/ecommerceNextJS",
       herramientas: ["react", "tailwindCSS", "nodeJS"],
     },
     {
@@ -47,7 +47,7 @@ export default function Trabajos() {
       descripcion: "Galeria Local Automatica para Plataforma 360°",
       imagen: Galeria360,
       url: "//galeria360.vercel.app//",
-      repositorio: "https://github.com/RamiroQuiro/Galeria360",
+      repositorio: "//github.com/RamiroQuiro/Galeria360",
       herramientas: ["react", "tailwindCSS", "nodeJS"],
     },
     {
