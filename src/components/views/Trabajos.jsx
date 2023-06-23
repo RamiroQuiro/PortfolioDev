@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { titles } from "../../contexts/themes";
 import LoginTurnos from "../../images/Login.png";
 import CartaOnline from "../../images/CartaOnline.png";
 import CardsTrabajos from "./CardsTrabajos";
 import Galeria360 from "../../images/Galeria360.png"
+import xtoWeb from "../../images/XtoWeb.png"
+import kaypi from "../../images/Kaipy.png"
+import unidosis from "../../images/unidosis.png"
 import Practica from "../../images/PracticasReactJS.png"
 import Ecommerce from "../../images/Ecommerce.png"
 import FernandezVoley from "../../images/FernandezVoley.png"
@@ -23,8 +25,32 @@ export default function Trabajos() {
       descripcion: "Pagina Personal en donde voy subiendo cosas pequeñas",
       imagen: Practica,
       url: "//practicas-reactjs.vercel.app",
-      repositorio: "https://github.com/RamiroQuiro/Galeria360",
+      repositorio: "//github.com/RamiroQuiro/Galeria360",
       herramientas: ["react", "tailwindCSS", "nodeJS"],
+    },
+    {
+      nombre: "Kaypi - Tarjetas Personales",
+      descripcion: "Aplicacion para crear tarjetas personales digitales.",
+      imagen: kaypi,
+      url: "//kaypi.vercel.app/ramiroquiroga",
+      repositorio: "//github.com/RamiroQuiro/kaypi",
+      herramientas: [ "nextjs","tailwindCSS","firebase"],
+    },
+    {
+      nombre: "Sistema unidosis CePSI Eva Peron",
+      descripcion: "Sistema para servicio Unidosis, donde se crean los rotulos para las muestras magistrales",
+      imagen: unidosis,
+      url: "//github.com/RamiroQuiro/sistemaunidosis",
+      repositorio: "//github.com/RamiroQuiro/sistemaunidosis",
+      herramientas: [ "nextjs","tailwindCSS"],
+    },
+    {
+      nombre: "Parroquia Cristo Rey",
+      descripcion: "Landing Page de una parroquia Catolica.",
+      imagen: xtoWeb,
+      url: "//cristorey.vercel.app/",
+      repositorio: "//github.com/RamiroQuiro/xtoWebAstro",
+      herramientas: [ "astro","tailwindCSS"],
     },
     {
       nombre: "Landing Page Fernandez Voley",
